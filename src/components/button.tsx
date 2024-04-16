@@ -1,5 +1,11 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, Slot, type PropsOf } from '@builder.io/qwik'
 
-export const Button = component$(() => {
-  return <button>Click me</button>;
+type ButtonProps = PropsOf<'button'>
+
+export const Button = component$<ButtonProps>(({ ...props }) => {
+  return (
+    <button {...props} class="btn">
+      <Slot />
+    </button>
+  )
 })
