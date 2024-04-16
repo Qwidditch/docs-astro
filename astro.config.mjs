@@ -7,22 +7,19 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [starlight({
-    title: 'My Docs',
+    title: 'Qwidditch',
     social: {
       github: 'https://github.com/qwidditch'
     },
     sidebar: [{
       label: 'Getting started',
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'Example Guide',
-        link: '/guides/example/'
-      }]
+     	autogenerate: {
+				directory: 'getting-started'
+		 	}
     }, {
       label: 'Components',
       autogenerate: {
-        directory: 'reference'
+        directory: 'components'
       }
     }]
   }), qwikdev(), tailwind()]
