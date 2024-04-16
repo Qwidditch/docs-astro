@@ -15,6 +15,7 @@
     "@builder.io/qwik": "^1.5.2",
     "@qwikdev/astro": "^0.5.14",
     "astro": "^4.3.5",
+    "conventional-changelog-cli": "^4.1.0",
     "sharp": "^0.32.5",
     "typescript": "^5.4.5"
   }
