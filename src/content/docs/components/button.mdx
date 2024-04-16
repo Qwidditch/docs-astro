@@ -2,16 +2,18 @@
 title: Button
 description: Using the button component in your project
 ---
-import { Code } from '@astrojs/starlight/components'
+import { CardGrid, Code } from '@astrojs/starlight/components'
 import ButtonCode from '../../../components/button?raw'
-import Button from '../../../components/button'
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Button } from '../../../components/button'
+import { Tabs, TabItem, Card } from '@astrojs/starlight/components';
 
 Displays a button or a component that looks like a button.
 
 <Tabs>
   <TabItem label="Preview">
-    <Button />
+    <Card>
+      <Button />
+    </Card>
   </TabItem>
   <TabItem label="Code">
     <Code code={ButtonCode} lang="ts" title="src/components/button.tsx" />
