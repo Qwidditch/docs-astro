@@ -20,3 +20,19 @@ Displays a button or a component that looks like a button.
     <Code code={ButtonCode} lang="ts" title="src/components/button.tsx" />
   </TabItem>
 </Tabs>
+
+Customizing the button with own classes
+
+export const buttonWithCustomClasses =
+  '<Button class="rounded-none">Click me</Button>'
+
+<Tabs>
+  <TabItem label="Preview">
+    <Card>
+      <Button class="rounded-none">Click me</Button>
+    </Card>
+  </TabItem>
+  <TabItem label="Code">
+    <Code code={buttonWithCustomClasses} lang="ts" />
+  </TabItem>
+</Tabs>
