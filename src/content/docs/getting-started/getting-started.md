@@ -13,3 +13,5 @@ Qwidditch UI is built on top of tailwind and more specifically Daisy UI which is
 - 2 Install daisyUI
 - 3 Install clsx
 - 4 Install tailwind merge
+- 5 Install CVA (Class Variance Authority)
+- 6 Add cn util function
