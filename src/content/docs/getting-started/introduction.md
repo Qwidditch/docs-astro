@@ -11,6 +11,8 @@ Qwidditch UI is very clearly inspired by projects such as shad/cn ui and the lik
 
 This project is an amalgomation of other technologies and simply wouldn't be feasible without them, so I figured I might as well give a little shout out: Shadcn UI, Daisy UI, Tailwind, Tailwind Merge, Class Variance Authority, clsx and Qwik-UI
 
+Honorable mention: Astro and starlight for the documentation. Not a core as I'm likely to swap to a qwik alternative in the future.
+
 ## The problem with shadcn
 
 Ever noticed how all sites using shadcn look the same? Well it's no coincidence, it's because we as developers are lazy. The whole idea behind shad cn was that you owned the components so you could add the exact styling you wanted while giving you a great baseline to work from. In reality you are presented with so many options in the form of tailwind classes to choose from, that tweaking the entire system can become overwhelming. This is where I think semantic classes works really well as it cuts down the complexity of styles significantly and when you combine it with theming you have a really powerful tool at your hands.
