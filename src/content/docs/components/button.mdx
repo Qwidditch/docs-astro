@@ -17,25 +17,36 @@ Displays a button or a component that looks like a button.
     </Card>
   </TabItem>
   <TabItem label="Code">
-    <Code code={ButtonCode} lang="ts" title="src/components/button.tsx" />
+    <Code code={ButtonCode} lang="tsx" title="src/components/button.tsx" />
   </TabItem>
 </Tabs>
 
 ## Various colors
 
+export const buttonColors = `
+  <Button>Default</Button>
+  <Button color="primary">Primary</Button>
+  <Button color="secondary">Secondary</Button>
+  <Button color="neutral">Neutral</Button>
+  <Button color="accent">Accent</Button>
+  <Button color="link">Link</Button>
+`
+
 <Tabs>
   <TabItem label="Preview">
-    <Card class="flex gap-2">
-      <Button>Default</Button>
-      <Button color="primary">Primary</Button>
-      <Button color="secondary">Secondary</Button>
-      <Button color="neutral">Neutral</Button>
-      <Button color="accent">Accent</Button>
-      <Button color="link">Link</Button>
+    <Card>
+      <div class="flex gap-2">
+        <Button>Default</Button>
+        <Button color="primary">Primary</Button>
+        <Button color="secondary">Secondary</Button>
+        <Button color="neutral">Neutral</Button>
+        <Button color="accent">Accent</Button>
+        <Button color="link">Link</Button>
+      </div>
     </Card>
   </TabItem>
   <TabItem label="Code">
-    <Code code={ButtonCode} lang="ts" title="src/components/button.tsx" />
+    <Code code={buttonColors} lang="tsx" />
   </TabItem>
 </Tabs>
 
@@ -51,6 +62,6 @@ export const buttonWithCustomClasses =
     </Card>
   </TabItem>
   <TabItem label="Code">
-    <Code code={buttonWithCustomClasses} lang="ts" />
+    <Code code={buttonWithCustomClasses} lang="tsx" />
   </TabItem>
 </Tabs>
