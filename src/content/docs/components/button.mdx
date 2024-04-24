@@ -50,7 +50,29 @@ export const buttonColors = `
   </TabItem>
 </Tabs>
 
-Customizing the button with own classes
+## loading button
+
+export const loadingButton = `
+  <Button loading />
+  <Button color="primary" loading />
+  <Button color="secondary" loading />
+  <Button color="neutral" loading />
+  <Button color="accent" loading />
+  <Button color="link" loading />
+`
+
+<Tabs>
+  <TabItem label="Preview">
+    <Card>
+      <Button loading />
+    </Card>
+  </TabItem>
+  <TabItem label="Code">
+    <Code code={loadingButton} lang="tsx" />
+  </TabItem>
+</Tabs>
+
+## Customizing the button with own classes
 
 export const buttonWithCustomClasses =
   '<Button class="rounded-none">Click me</Button>'

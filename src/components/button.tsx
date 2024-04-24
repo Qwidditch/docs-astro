@@ -30,16 +30,20 @@ const buttonVariants = cva('btn', {
   },
 })
 
-type ButtonProps = PropsOf<'button'> & VariantProps<typeof buttonVariants>
+type ButtonProps = PropsOf<'button'> &
+  VariantProps<typeof buttonVariants> & {
+    loading: boolean
+  }
 
 export const Button = component$<ButtonProps>(
-  ({ color, size, variant, ...props }) => {
+  ({ color, size, variant, loading, ...props }) => {
     return (
       <button
-        {...props}
         class={cn(buttonVariants({ color, size, variant }), props.class)}
+        disabled={loading || props.disabled}
+        {...props}
       >
-        <Slot />
+        {loading ? <span class="loading loading-spinner"></span> : <Slot />}
       </button>
     )
   }
