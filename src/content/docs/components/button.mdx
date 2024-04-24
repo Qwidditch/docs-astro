@@ -50,6 +50,33 @@ export const buttonColors = `
   </TabItem>
 </Tabs>
 
+## State colors
+
+export const buttonStateColors = `
+  <Button>Default</Button>
+  <Button color="primary">Primary</Button>
+  <Button color="secondary">Secondary</Button>
+  <Button color="neutral">Neutral</Button>
+  <Button color="accent">Accent</Button>
+  <Button color="link">Link</Button>
+`
+
+<Tabs>
+  <TabItem label="Preview">
+    <Card>
+      <div class="flex gap-2">
+        <Button state="info">Info</Button>
+        <Button state="success">Success</Button>
+        <Button state="warning">Warning</Button>
+        <Button state="error">Error</Button>
+      </div>
+    </Card>
+  </TabItem>
+  <TabItem label="Code">
+    <Code code={buttonColors} lang="tsx" />
+  </TabItem>
+</Tabs>
+
 ## loading button
 
 export const loadingButton = '<Button loading />'

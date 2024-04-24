@@ -13,6 +13,12 @@ const buttonVariants = cva('btn', {
       ghost: 'btn-ghost',
       link: 'btn-link',
     },
+    state: {
+      info: 'btn-info',
+      success: 'btn-success',
+      warning: 'btn-warning',
+      error: 'btn-error',
+    },
     size: {
       xs: 'btn-xs',
       sm: 'btn-sm',
@@ -36,10 +42,10 @@ type ButtonProps = PropsOf<'button'> &
   }
 
 export const Button = component$<ButtonProps>(
-  ({ color, size, variant, loading, ...props }) => {
+  ({ color, size, variant, loading, state, ...props }) => {
     return (
       <button
-        class={cn(buttonVariants({ color, size, variant }), props.class)}
+        class={cn(buttonVariants({ color, size, variant, state }), props.class)}
         disabled={loading || props.disabled}
         {...props}
       >
