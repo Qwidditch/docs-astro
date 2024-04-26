@@ -77,6 +77,31 @@ export const buttonStateColors = `
   </TabItem>
 </Tabs>
 
+## Button sizes
+
+export const buttonSizes = `
+  <Button size="xs">Extra small</Button>
+  <Button size="sm">Small</Button>
+  <Button size="md">Medium</Button>
+  <Button size="lg">Large</Button>
+`
+
+<Tabs>
+  <TabItem label="Preview">
+    <Card>
+      <div class="flex gap-2 items-center">
+        <Button size="xs">Extra small</Button>
+        <Button size="sm">Small</Button>
+        <Button size="md">Medium</Button>
+        <Button size="lg">Large</Button>
+      </div>
+    </Card>
+  </TabItem>
+  <TabItem label="Code">
+    <Code code={buttonSizes} lang="tsx" />
+  </TabItem>
+</Tabs>
+
 ## loading button
 
 export const loadingButton = '<Button loading />'
