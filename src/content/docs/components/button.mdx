@@ -117,6 +117,29 @@ export const loadingButton = '<Button loading />'
   </TabItem>
 </Tabs>
 
+## Different shaped buttons
+
+export const shapedButtons = `
+  <Button shape="circle">Circle</Button>
+  <Button shape="square">Square</Button>
+`
+
+These shaped buttons are great for icon buttons.
+
+<Tabs>
+  <TabItem label="Preview">
+    <Card>
+      <div class="flex gap-4">
+        <Button shape="circle">Circle</Button>
+        <Button shape="square">Square</Button>
+      </div>
+    </Card>
+  </TabItem>
+  <TabItem label="Code">
+    <Code code={shapedButtons} lang="tsx" />
+  </TabItem>
+</Tabs>
+
 ## Customizing the button with own classes
 
 export const buttonWithCustomClasses =
