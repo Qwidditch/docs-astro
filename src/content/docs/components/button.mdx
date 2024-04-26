@@ -140,6 +140,29 @@ These shaped buttons are great for icon buttons.
   </TabItem>
 </Tabs>
 
+## Other types of buttons
+
+export const otherButtons = `
+  <Button wide>Wide</Button>
+  <Button block>Block</Button>
+  <Button glass>Glass</Button>
+`
+
+<Tabs>
+  <TabItem label="Preview">
+    <Card>
+      <div class="flex flex-col gap-4">
+        <Button wide>Wide</Button>
+        <Button block>Block</Button>
+        <Button glass>Glass</Button>
+      </div>
+    </Card>
+  </TabItem>
+  <TabItem label="Code">
+    <Code code={otherButtons} lang="tsx" />
+  </TabItem>
+</Tabs>
+
 ## Customizing the button with own classes
 
 export const buttonWithCustomClasses =
