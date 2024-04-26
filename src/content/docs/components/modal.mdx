@@ -1,0 +1,19 @@
+---
+title: Modal
+description: Using the modal component in your project
+---
+
+import { ModalExample } from '../../../components/modalExample'
+import { Tabs, TabItem, Card } from '@astrojs/starlight/components'
+import { CardGrid, Code } from '@astrojs/starlight/components'
+
+<Tabs>
+  <TabItem label="Preview">
+    <Card>
+      <ModalExample />
+    </Card>
+  </TabItem>
+  <TabItem label="Code">
+    <Code code="notjing" lang="tsx" />
+  </TabItem>
+</Tabs>
