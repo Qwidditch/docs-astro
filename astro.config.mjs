@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://qwidditch.github.io',
-  base: 'docs-astro',
+  base: '/docs-astro',
   integrations: [
     starlight({
       title: 'Qwidditch',
