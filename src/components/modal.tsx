@@ -6,6 +6,7 @@ import {
   useTask$,
   type Signal,
 } from '@builder.io/qwik'
+import { cn } from '../utils/cn'
 
 type ModalProps = Omit<PropsOf<'dialog'>, 'open'> & {
   open: Signal<boolean>
@@ -47,6 +48,7 @@ export const Modal = component$<ModalProps>(
             </form>
           )}
           <Slot />
+          <Slot name="actions" />
         </div>
         <form method="dialog" class="modal-backdrop">
           <button>close modal</button>
@@ -55,3 +57,14 @@ export const Modal = component$<ModalProps>(
     )
   }
 )
+
+type ModalActionsProps = PropsOf<'div'>
+
+export const ModalActions = component$<ModalActionsProps>((props) => {
+  const styles = 'flex justify-end gap-2'
+  return (
+    <div {...props} class={cn(styles, props.class)} q:slot="actions">
+      <Slot />
+    </div>
+  )
+})
