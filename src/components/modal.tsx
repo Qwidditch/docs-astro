@@ -31,10 +31,10 @@ export const Modal = component$<ModalProps>(
     })
     return (
       <dialog
+        {...props}
         ref={modalRef}
         onClose$={() => (open.value = false)}
-        class="modal"
-        {...props}
+        class={cn('modal', props.class)}
       >
         <div class="modal-box">
           {withCloseButton && (
@@ -61,9 +61,12 @@ export const Modal = component$<ModalProps>(
 type ModalActionsProps = PropsOf<'div'>
 
 export const ModalActions = component$<ModalActionsProps>((props) => {
-  const styles = 'flex justify-end gap-2'
   return (
-    <div {...props} class={cn(styles, props.class)} q:slot="actions">
+    <div
+      {...props}
+      class={cn('flex justify-end gap-2 items-end', props.class)}
+      q:slot="actions"
+    >
       <Slot />
     </div>
   )
