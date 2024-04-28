@@ -6,6 +6,7 @@ description: Using the modal component in your project
 import { ModalExample } from '../../../components/modalExample'
 import { Tabs, TabItem, Card } from '@astrojs/starlight/components'
 import { CardGrid, Code } from '@astrojs/starlight/components'
+import ModalCode from '../../../components/modal?raw'
 
 <Tabs>
   <TabItem label="Preview">
@@ -14,6 +15,6 @@ import { CardGrid, Code } from '@astrojs/starlight/components'
     </Card>
   </TabItem>
   <TabItem label="Code">
-    <Code code="notjing" lang="tsx" />
+    <Code code={ModalCode} lang="tsx" />
   </TabItem>
 </Tabs>
