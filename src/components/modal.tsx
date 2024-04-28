@@ -38,7 +38,10 @@ export const Modal = component$<ModalProps>(
         <div class="modal-box">
           {withCloseButton && (
             <form method="dialog">
-              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <button
+                aria-label="Close Modal"
+                class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              >
                 ✕
               </button>
             </form>
@@ -46,7 +49,7 @@ export const Modal = component$<ModalProps>(
           <Slot />
         </div>
         <form method="dialog" class="modal-backdrop">
-          <button>close</button>
+          <button>close modal</button>
         </form>
       </dialog>
     )
